@@ -1,0 +1,26 @@
+{
+  "release": "R011",
+  "title": "Order-six quantum Latin square of cardinality 29",
+  "claim": "There exists a real quantum Latin square of order 6 with cardinality 29.",
+  "field": "R^6 subset C^6",
+  "quadratic_parameter": "123201*tau^2 - 202800*tau - 93848 = 0, positive root",
+  "baseline": {
+    "source": "Zhipeng Xu, New Cardinalities for Quantum Latin Squares of Order Six, arXiv:2607.11800v3",
+    "source_url": "https://arxiv.org/abs/2607.11800v3",
+    "source_revision_date": "2026-08-04",
+    "boundary": "The paper states that 29 is the single unresolved order-six cardinality."
+  },
+  "principal_verifier": "python verify_qls6_card29.py",
+  "secondary_verifier": "python verify_qls6_card29_sympy.py",
+  "expected": {
+    "orthogonality_checks": 120,
+    "off_diagonal_ray_classes": 28,
+    "repeated_off_diagonal_classes": [[[0, 1], [2, 3]], [[3, 4], [5, 0]]],
+    "total_cardinality": 29
+  },
+  "limitations": [
+    "No uniqueness or classification claim.",
+    "The decimal vector export is not part of the exact trust boundary.",
+    "Independent specialist review is pending."
+  ]
+}
