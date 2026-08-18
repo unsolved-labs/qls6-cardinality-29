@@ -17,7 +17,8 @@
       "submitted": "2026-08-12",
       "boundary": "This public paper also proves existence of a real QLS(6) of cardinality 29 and closes the order-six spectrum gap."
     },
-    "priority_boundary": "R011 makes no priority claim for first resolving cardinality 29."
+    "independence_boundary": "The R011 construction was independently obtained in the Unsolved Labs frontier-AI research workflow rather than derived from the Das-Kumar construction.",
+    "priority_boundary": "R011 makes no claim of first public disclosure of a cardinality-29 construction."
   },
   "verification": {
     "principal_construction_verifier": "python verify_qls6_card29.py",
@@ -32,13 +33,19 @@
     "off_diagonal_pairwise_ray_tests": 435,
     "off_diagonal_ray_classes": 28,
     "repeated_off_diagonal_classes": [
-      [[0, 1], [2, 3]],
-      [[3, 4], [5, 0]]
+      [
+        [0, 1],
+        [2, 3]
+      ],
+      [
+        [3, 4],
+        [5, 0]
+      ]
     ],
     "total_cardinality": 29
   },
   "limitations": [
-    "No priority claim for first resolving cardinality 29.",
+    "No claim of first public disclosure of a cardinality-29 construction.",
     "No uniqueness or classification claim.",
     "No optimality claim for the algebraic representation.",
     "The decimal vector export is not part of the exact trust boundary.",
@@ -48,6 +55,7 @@
   "provenance": {
     "organization": "Unsolved Labs",
     "workflow": "frontier-AI research workflow",
+    "independently_obtained": true,
     "authorship_boundary": "No conventional human-authorship claim is implied by this metadata."
   }
 }
