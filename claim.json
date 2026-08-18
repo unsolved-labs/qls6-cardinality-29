@@ -4,23 +4,50 @@
   "claim": "There exists a real quantum Latin square of order 6 with cardinality 29.",
   "field": "R^6 subset C^6",
   "quadratic_parameter": "123201*tau^2 - 202800*tau - 93848 = 0, positive root",
-  "baseline": {
-    "source": "Zhipeng Xu, New Cardinalities for Quantum Latin Squares of Order Six, arXiv:2607.11800v3",
-    "source_url": "https://arxiv.org/abs/2607.11800v3",
-    "source_revision_date": "2026-08-04",
-    "boundary": "The paper states that 29 is the single unresolved order-six cardinality."
+  "literature": {
+    "historical_snapshot": {
+      "source": "Zhipeng Xu, New Cardinalities for Quantum Latin Squares of Order Six, arXiv:2607.11800v3",
+      "source_url": "https://arxiv.org/abs/2607.11800v3",
+      "source_revision_date": "2026-08-04",
+      "boundary": "At that revision, cardinality 29 was the remaining unresolved order-six value."
+    },
+    "current_parallel_result": {
+      "source": "Aishwarya P. Das and Durgesh Kumar, A Quantum Latin Square of Order Six with Cardinality 29, arXiv:2608.12607",
+      "source_url": "https://arxiv.org/abs/2608.12607",
+      "submitted": "2026-08-12",
+      "boundary": "This public paper also proves existence of a real QLS(6) of cardinality 29 and closes the order-six spectrum gap."
+    },
+    "priority_boundary": "R011 makes no priority claim for first resolving cardinality 29."
   },
-  "principal_verifier": "python verify_qls6_card29.py",
-  "secondary_verifier": "python verify_qls6_card29_sympy.py",
+  "verification": {
+    "principal_construction_verifier": "python verify_qls6_card29.py",
+    "construction_to_certificate": "python generate_exact_certificate.py --check certificate/qls6_card29_exact.json",
+    "minimal_certificate_verifier": "python verify_certificate.py certificate/qls6_card29_exact.json",
+    "independent_symbolic_verifier": "python verify_qls6_card29_sympy.py",
+    "release_entry_point": "python verify_release.py"
+  },
   "expected": {
+    "nonzero_off_diagonal_directions": 30,
     "orthogonality_checks": 120,
+    "off_diagonal_pairwise_ray_tests": 435,
     "off_diagonal_ray_classes": 28,
-    "repeated_off_diagonal_classes": [[[0, 1], [2, 3]], [[3, 4], [5, 0]]],
+    "repeated_off_diagonal_classes": [
+      [[0, 1], [2, 3]],
+      [[3, 4], [5, 0]]
+    ],
     "total_cardinality": 29
   },
   "limitations": [
+    "No priority claim for first resolving cardinality 29.",
     "No uniqueness or classification claim.",
+    "No optimality claim for the algebraic representation.",
     "The decimal vector export is not part of the exact trust boundary.",
-    "Independent specialist review is pending."
-  ]
+    "No Lean/proof-assistant verification is claimed."
+  ],
+  "review_status": "pending",
+  "provenance": {
+    "organization": "Unsolved Labs",
+    "workflow": "frontier-AI research workflow",
+    "authorship_boundary": "No conventional human-authorship claim is implied by this metadata."
+  }
 }

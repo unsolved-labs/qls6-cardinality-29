@@ -1,20 +1,23 @@
-name: Verify construction
+name: Verify R011 release
 
 on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   exact-verification:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Standard-library exact verifier
-        run: python verify_qls6_card29.py
-      - name: Install independent verifier dependency
+          cache: 'pip'
+      - name: Install pinned symbolic verifier dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
-      - name: Independent SymPy verifier
-        run: python verify_qls6_card29_sympy.py
+      - name: Run complete release verification
+        run: python verify_release.py
