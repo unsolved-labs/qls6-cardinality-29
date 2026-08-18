@@ -133,7 +133,7 @@ The manifest deliberately does not hash itself.
 
 ## Markdown rendering check
 
-GitHub renders mathematical Markdown using `$...$`, `$$...$$`, or fenced `math` blocks. The release entry point rejects legacy `\(...\)` / `\[...\]` delimiters in committed Markdown files.
+GitHub renders mathematical Markdown using `$...$`, `$$...$$`, or fenced `math` blocks. The release entry point rejects legacy parenthesized or bracketed TeX math delimiters in committed Markdown files.
 
 This is a presentation check only; it does not affect mathematical validity.
 
