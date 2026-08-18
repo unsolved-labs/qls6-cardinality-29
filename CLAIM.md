@@ -29,15 +29,19 @@ The off-diagonal cells are normalized nonzero directions in $\mathbb{R}^5$ embed
   - $(3,4)\sim(5,0)$;
 - 29 total ray classes after adding the common diagonal ray.
 
+## Provenance and priority boundary
+
+The displayed R011 construction was independently obtained in the Unsolved Labs frontier-AI research workflow. A separate cardinality-29 construction by Das and Kumar was publicly posted on arXiv on 2026-08-12, before R011's surviving public Git history begins on 2026-08-14.
+
+Accordingly, independence of discovery is recorded, while no claim of first public disclosure is made. See [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md).
+
 ## Non-claims
 
 R011 does not claim:
 
-- priority for first resolving cardinality 29;
+- first public disclosure of a cardinality-29 construction;
 - uniqueness or classification;
 - optimality of the coordinates or construction method;
 - Lean/proof-assistant verification;
 - that the decimal vector export is an exact proof artifact;
 - completed independent specialist review.
-
-The current literature/provenance boundary is recorded in [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md).

@@ -21,13 +21,13 @@ Thirty nonzero off-diagonal directions are constructed in $\mathbb{R}^5$. After 
 - **Verification contract:** [`VERIFICATION.md`](VERIFICATION.md)
 - **Literature/provenance audit:** [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md)
 
-## Current literature boundary
+## Current literature and independence boundary
 
 The historical comparison used when this artifact was assembled was Zhipeng Xu, arXiv:2607.11800v3 (revised 2026-08-04), whose then-current order-six spectrum left cardinality 29 unresolved.
 
-That is no longer the current literature state. Aishwarya P. Das and Durgesh Kumar posted *A Quantum Latin Square of Order Six with Cardinality 29*, arXiv:2608.12607, on 2026-08-12, giving another explicit real cardinality-29 construction and closing the remaining order-six spectrum gap.
+Aishwarya P. Das and Durgesh Kumar posted *A Quantum Latin Square of Order Six with Cardinality 29*, arXiv:2608.12607, on 2026-08-12. The earliest surviving R011 GitHub Pages trace is the release reservation on 2026-08-14, followed by the public R011 release later that day. R011 therefore does **not** claim first public disclosure of a cardinality-29 construction.
 
-Accordingly, **R011 makes no priority claim for resolving cardinality 29**. Its public claim is the correctness of the explicit construction and exact verification contained in this repository. See [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md).
+The R011 construction was **independently obtained** in the Unsolved Labs frontier-AI research workflow rather than derived from the Das-Kumar construction. The two public constructions share the natural punctured-array reduction but use materially different explicit parameterizations and compatibility identities. Independence of discovery is a provenance statement; it does not imply publication priority. See [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md).
 
 ## Exact verification
 
@@ -96,11 +96,11 @@ The exact verifiers establish:
 
 ## Scope and non-claims
 
-This repository proves existence of one explicit real $\mathrm{QLS}(6)$ of cardinality 29.
+This repository proves existence of one explicit real $\mathrm{QLS}(6)$ of cardinality 29 and records that the displayed construction was independently obtained.
 
 It does **not** claim:
 
-- priority for first resolving cardinality 29;
+- first public disclosure of a cardinality-29 construction;
 - uniqueness or classification of cardinality-29 examples;
 - optimality or simplicity of this algebraic representation;
 - Lean or other proof-assistant verification;
@@ -126,4 +126,4 @@ Independent specialist review remains **pending**.
 
 ## Research provenance
 
-R011 is a public Unsolved Labs research artifact produced in a frontier-AI research workflow. Correctness is not inferred from that provenance; it is supported by the explicit proof manuscript and exact machine-verification layers above. No conventional human-authorship claim is implied by the repository metadata.
+R011 is a public Unsolved Labs research artifact independently obtained in a frontier-AI research workflow. Correctness is not inferred from that provenance; it is supported by the explicit proof manuscript and exact machine-verification layers above. No conventional human-authorship claim is implied by the repository metadata.
